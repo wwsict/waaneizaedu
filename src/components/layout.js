@@ -12,7 +12,7 @@ const Layout = ({ title, pageHeading, children }) => {
                     <li className={navLinkItem}><Link className={navLinkText} to='/'>Home Page</Link></li>
                     <li className={navLinkItem}><Link className={navLinkText} to='/about'>About Page</Link></li>
                     <li className={navLinkItem}><Link className={navLinkText} to='/contact'>Contact Page</Link></li>
-                </ul>]
+                </ul>
             </nav>
             <h1 className={heading}>{pageHeading}</h1>
             {children}
