@@ -5,8 +5,7 @@ import { container, heading, navLinks, navLinkItem, navLinkText } from './layout
 const Layout = ({ title, pageHeading, children }) => {
     return(
         <main className={container}>
-            <title>{title}</title>
-            
+            <title>{title}</title>            
             <nav>
                 <ul className={navLinks}>
                     <li className={navLinkItem}><Link className={navLinkText} to='/'>Home Page</Link></li>
@@ -14,7 +13,7 @@ const Layout = ({ title, pageHeading, children }) => {
                     <li className={navLinkItem}><Link className={navLinkText} to='/contact'>Contact Page</Link></li>
                 </ul>
             </nav>
-            <h1 className={heading}>{pageHeading}</h1>
+            <h2 className={heading}>{pageHeading}</h2>
             {children}
         </main>
     );
